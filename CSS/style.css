@@ -18,10 +18,14 @@ header {
     align-items: center;
     padding: 20px 8%;
     background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+/* header img {
+    width: 70px !important;
+    height: auto;
+} */
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #00355a;
 }
 
@@ -35,7 +39,10 @@ nav ul li a {
     text-decoration: none;
     color: #4F4F4F;
     font-weight: 500;
+    font-size: 1.3rem
 }
+header nav ul li a:hover {
+    color: #00567e;}
 
 /* 3. Section Hero (Mise en page Flexbox) */
 .hero {
@@ -44,11 +51,6 @@ nav ul li a {
     justify-content: space-between;
     padding: 80px 8%;
     min-height: 80vh;
-}
-.divider {
-    height: 100px;
-    background-color: #91dcff;
-    clip-path: ellipse(70% 10% at 25% 0%); 
 }
 
 .first-text {
@@ -114,7 +116,11 @@ nav ul li a {
     justify-content: center;
     flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante */
 }
-
+.Cartes h2 {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
 .pet-card {
     background: white;
     display: flex;
