@@ -1,0 +1,199 @@
+/* 1. Paramètres Globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #ebf6ff; /* Couleur de fond beige clair */
+    color: #333333; /* Couleur du texte principale */
+}
+
+/* 2. Style de l'En-tête (Navigation) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #00355a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4F4F4F;
+    font-weight: 500;
+}
+
+/* 3. Section Hero (Mise en page Flexbox) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    min-height: 80vh;
+}
+.divider {
+    height: 100px;
+    background-color: #91dcff;
+    clip-path: ellipse(70% 10% at 25% 0%); 
+}
+
+.first-text {
+    flex: 1; /* Prend 50% de la largeur disponible */
+}
+
+.first-text h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #4a3328;
+}
+
+.first-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #4F4F4F;
+    max-width: 450px;
+}
+
+/* Style du Bouton d'Action */
+.btn-main {
+    background-color: #2c4363;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.btn-main:hover {
+    background: rgb(51, 88, 136);
+    
+}
+
+/* 4. Section des Images Hero (Alignement à droite) */
+.images-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* Aligne les images vers la droite */
+    gap: 20px;
+}
+
+.images-hero img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.images-hero img:hover {
+    transform: translateX(-10px); /* Effet de mouvement au survol */
+}
+
+/* 5. Cartes des Animaux (Section Adoption) */
+.Cartes {
+    padding: 50px 8%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante */
+}
+
+.pet-card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 20px;
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.pet-image {
+    border-radius: 15px;
+    width: 50%;
+}
+.pet-card:hover {
+    transform: translateY(-10px); /* Petit effet de lévitation au survol */
+    background: rgb(186, 216, 255);
+    
+}
+
+/* 6. Pied de Page (Footer) */
+footer {
+    background: #53bfe2;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 3rem 8% 2rem;
+
+}
+.footer-brand-desc {
+    font-size: 0.85rem;
+    color: #dbf0ff;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    max-width: 240px;
+}
+
+footer ul {
+    list-style: none;
+    flex-direction: row;
+
+}
+
+footer ul li {
+    margin-bottom: 0.6rem;
+}
+
+footer a {
+    color: #dbf0ff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: white;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
