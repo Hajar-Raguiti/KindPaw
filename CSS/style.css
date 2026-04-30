@@ -241,3 +241,62 @@ footer a:hover {
     background-color: rgb(51, 88, 136); 
     transform: scale(1.05); 
 }
+/* =============ADOPTION PAGE STYLES (hero-cardes)============= */
+/* --- Style de la section Introduction --- */
+.adoption-intro {
+    background-color: #f8fbfd;
+    padding: 60px 20px;
+    text-align: justify;
+    border-bottom: 2px solid #eef2f5;
+    
+    
+}
+
+.intro-content h1 {
+    color: #2c4363;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-content p {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    justify-content:justify;
+}
+
+/* --- Style des boutons de filtrage --- */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 2px solid #2c4363;
+    background: transparent;
+    color: #2c4363;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* État au survol et bouton actif */
+.filter-btn:hover, .filter-btn.active {
+    background-color: #2c4363;
+    color: white;
+}
+
+/* --- Grille des cartes (Layout) --- */
+.adoption-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 10%;
+}
