@@ -115,7 +115,7 @@ footer a:hover {
 }
 
 
-/* =============HOME PAGE STYLES (hero-cardes)============= */
+/* =============HOME PAGE STYLES============= */
 /* Section Hero (Mise en page Flexbox) */
 .hero {
     display: flex;
@@ -299,4 +299,95 @@ footer a:hover {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 50px 10%;
+}
+
+/* =============STORIES PAGE STYLES ============= */*
+/* Activation du défilement fluide pour la navigation interne */
+html {
+    scroll-behavior: smooth;
+}
+
+.main-storyPage {
+    max-width: 850px; /* Largeur optimale pour le confort de lecture */
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #444;
+}
+
+/* --- Sommaire de navigation (Table des matières) --- */
+.main-storyPage ul {
+    background-color: #f0f7ff;
+    padding: 25px 50px;
+    border-radius: 15px;
+    list-style-type: none; /* Design moderne sans puces classiques */
+    margin-bottom: 60px;
+    box-shadow: inset 5px 0 0 #2c4363; /* Bordure décorative aux couleurs de KindPaw */
+}
+
+.main-storyPage ul li {
+    margin-bottom: 12px;
+}
+
+.main-storyPage ul li a {
+    text-decoration: none;
+    color: #2c4363;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.main-storyPage ul li a:hover {
+    color: #f2994a; /* Changement de couleur au survol */
+    padding-left: 10px; /* Petit effet de mouvement */
+}
+
+/* --- Mise en page des sections d'articles --- */
+.main-storyPage section {
+    margin-bottom: 100px; /* Grand espace pour isoler chaque récit */
+    text-align: center;
+}
+
+.main-storyPage h3 {
+    color: #2c4363;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* --- Style des images de récits --- */
+.main-storyPage section img {
+    width: 100%; /* L'image occupe toute la largeur disponible */
+    height: 450px; /* Hauteur fixe pour l'uniformité visuelle */
+    object-fit: cover; /* Recadrage intelligent sans déformation */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Ombre portée pour donner du relief */
+}
+
+.main-storyPage p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify; /* Justification du texte pour un aspect éditorial */
+    margin-bottom: 30px;
+}
+
+/* --- Lien de retour vers le haut de page --- */
+.main-storyPage a[href="#top"] {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2c4363;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border: 2px solid #2c4363;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.main-storyPage a[href="#top"]:hover {
+    background-color: #2c4363;
+    color: #fff;
 }
