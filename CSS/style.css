@@ -9,10 +9,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     background-color: #ebf6ff; /* Couleur de fond beige clair */
     color: #333333; /* Couleur du texte principale */
 }
-
+main {
+    flex: 1;}
 /*Style de l'En-tête (Navigation) */
 header {
     display: flex;
@@ -56,7 +61,8 @@ footer {
     color: white;
     margin-top: 50px;
     display: block;
-    
+    position: relative;
+    margin-bottom: 0;
 }
 
 .footer-top {
