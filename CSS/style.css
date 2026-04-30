@@ -223,3 +223,21 @@ footer a:hover {
     
 }
 
+
+.btn-adopt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c4363; 
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px; 
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn-adopt:hover {
+    background-color: rgb(51, 88, 136); 
+    transform: scale(1.05); 
+}
