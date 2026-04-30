@@ -1,4 +1,6 @@
-/* 1. Paramètres Globaux */
+/* =============GLOBALE STYLES (HEADER-FOOTER)============= */
+
+/* Paramètres Globaux */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
     color: #333333; /* Couleur du texte principale */
 }
 
-/* 2. Style de l'En-tête (Navigation) */
+/*Style de l'En-tête (Navigation) */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,114 +48,9 @@ nav ul li a {
 header nav ul li a:hover {
     color: #00567e;}
 
-/* 3. Section Hero (Mise en page Flexbox) */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 8%;
-    min-height: 80vh;
-    flex-wrap: wrap;
-}
 
-.first-text {
-     flex: 1 1 300px; /* Prend 50% de la largeur disponible */
-}
 
-.first-text h2 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    color: #4a3328;
-}
-
-.first-text p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #4F4F4F;
-    max-width: 450px;
-}
-
-/* Style du Bouton d'Action */
-.btn-main {
-    background-color: #2c4363;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-}
-.btn-main:hover {
-    background: rgb(51, 88, 136);
-    
-}
-
-/* 4. Section des Images Hero (Alignement à droite) */
-.images-hero {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end; /* Aligne les images vers la droite */
-    gap: 20px;
-}
-
-.images-hero img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: 0.3s ease-in-out;
-}
-
-.images-hero img:hover {
-    transform: translateX(-10px); /* Effet de mouvement au survol */
-}
-
-/* 5. Cartes des Animaux (Section Adoption) */
-.Cartes {
-    padding: 50px 8%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante */
-}
-.Cartes h2 {
-    width: 100%; 
-    text-align: center; 
-    margin-bottom: 30px;
-}
-.pet-card {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-    gap: 20px;
-    width: auto;
-    max-width: 400px;
-    flex: 1 1 250px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    text-align: center;
-
-}
-
-.pet-image {
-    border-radius: 15px;
-    width: 100%;
-    max-width: 220px;
-}
-.pet-card:hover {
-    transform: translateY(-10px); /* Petit effet de lévitation au survol */
-    background: rgb(186, 216, 255);
-    
-}
-
-/* 6. Pied de Page (Footer) */
+/* Pied de Page (Footer) */
 footer {
     background: #53bfe2;
     color: white;
@@ -210,3 +107,113 @@ footer a:hover {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
+
+/* =============HOME PAGE STYLES (hero-cardes)============= */
+/* Section Hero (Mise en page Flexbox) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.first-text {
+     flex: 1 1 300px;
+}
+
+.first-text h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #4a3328;
+}
+
+.first-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #4F4F4F;
+    max-width: 450px;
+}
+
+/* Style du Bouton d'Action */
+.btn-main {
+    background-color: #2c4363;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.btn-main:hover {
+    background: rgb(51, 88, 136);
+    
+}
+
+/* 4. Section des Images Hero (Alignement à droite) */
+.images-hero {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; /* Aligne les images vers la droite */
+    gap: 20px;
+}
+
+.images-hero img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.images-hero img:hover {
+    transform: translateX(-10px); /* Effet de mouvement au survol */
+}
+
+/*Cartes des Animaux (Section Adoption) */
+.Cartes {
+    padding: 50px 8%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante */
+}
+.Cartes h2 {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+.pet-card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    width: auto;
+    max-width: 400px;
+    flex: 1 1 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+.pet-image {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 220px;
+}
+.pet-card:hover {
+    transform: translateY(-10px); /* Petit effet de lévitation au survol */
+    background: rgb(186, 216, 255);
+    
+}
+
