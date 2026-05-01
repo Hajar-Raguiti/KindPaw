@@ -114,6 +114,43 @@
                 <a href="#" class="btn-adopt">Adopter Sherkan</a>
             </div>
         </section>
+        <section class="adopt-form">
+            <p><h2>Adoptez un animal</h2></p>
+                <p>Si vous souhaitez obtenir plus d'informations sur l'adoption d'un animal chez nous, veuillez remplir le formulaire ci-dessous et nous vous recontacterons !</p>
+            <form action="" method="get" accept-charset="utf-8">
+                <fieldset>                
+                <!--Nom-->
+                <label for="Nom">Nom:</label>
+                <input type="text" id="Nom" class="cas" name="Nom" pattern="^[A-za-z]+(\s[A-za-z]+){0,2}$" maxlength="100" required><br><br>
+                <!--Adresse e-mail -->
+                <label for="email">Adresse e-mail:</label>
+                <input type="email" id="email" class="cas" name="email" pattern=".@uca\.ac\.ma$"required><br><br>
+                <!--numero de telephone-->
+                <label for="number">numero de telephone:</label>
+                <input type="number" id="number" class="cas" name="number" pattern="(^0[567]\d{8}$)|(^(\+212)[567]\d{8}$)"required><br><br>
+                <!--ville-->
+                <label for="Ville">Ville:</label>
+                <input type="text" id="Ville" class="cas" name="Ville" pattern="^[A-za-z]+(\s[A-za-z]+){0,2}$" maxlength="100" required><br><br>
+ 
+                <!--message-->
+                <label for="desc">Message:</label><br>
+                <textarea id="desc" class="cas" name="desc" maxlength="500" placeholder="Message*"></textarea><br><br>
+                <!--Competence-->
+                <label for="find">Comment as-tu découvert Kindpaw ? :</label>
+                <select id="find" class="cas" name="find" required >
+                    <option value="rs" >Réseaux Sociaux</option>
+                    <option value="rg">Recherche Google</option>
+                    <option value="ev">Événement de bienfaisance</option>
+                    <option value="autre" >autre</option>
+                </select><br><br>
+
+                <!--newsletter-->
+                <label for="newsletter">souhaitez-vous recevoir notre nexsletter ?</label>
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <button type="submit">Envoyer</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
     
 </body>
@@ -125,7 +162,7 @@
                     Offrir un foyer aimant à chaque animal abandonné.
                     Refuge certifié, adoption responsable depuis 2018.
                 </p>
-            </div>
+            </div>=-
             
             <div class="footer-links-group">
                 <h4>Navigation</h4>

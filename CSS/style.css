@@ -294,13 +294,78 @@ footer a:hover {
 }
 
 /* --- Grille des cartes (Layout) --- */
-.adoption-gallery {
+/* .adoption-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 50px 10%;
+} */
+                        /*form*/
+.adopt-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dbefff;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+.adopt-form h2, .adopt-form p   {
+    text-align: center;
+    width: 100%;
+
+}
+fieldset {
+    border: 2px solid #e6eaff;
+    border-radius: 8px;
+    padding: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+.cas {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.cas:focus{
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    outline: none;
+    transition: 0.3s;
+}
+#newsletter {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 
+.adopt-form label[for="newsletter"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+button[type="submit"] {
+    background-color: #001e5b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #8ba6ff;
+}
 /* =============STORIES PAGE STYLES ============= */*
 /* Activation du défilement fluide pour la navigation interne */
 html {
