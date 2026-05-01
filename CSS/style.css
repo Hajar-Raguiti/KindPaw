@@ -540,3 +540,76 @@ html {
 .tips-a{
     text-decoration: none;
 }
+
+/* =============CONTACT STYLES ============= */
+.contact-section {
+    padding: 80px 10%;
+    background-color: #ebf6ff;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* à gauche*/
+.contact-info {
+    flex: 1; 
+}
+
+.sub-title {
+    color: #888;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.main-title {
+    color: #002878; 
+    font-size: 3rem;
+    margin: 10px 0 30px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.info-item h4, .address-section h4 {
+    color: #888;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.info-item p, .address-section p {
+    color: #1c00ba;
+    font-weight: 500;
+}
+
+/*à droit*/
+.contact-map {
+    flex: 1;
+    height: 450px;
+}
+
+/* Responsive: */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-map {
+        width: 100%;
+    }
+}
+/* =============FAQ STYLE ============= */
