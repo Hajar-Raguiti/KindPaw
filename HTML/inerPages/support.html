@@ -39,6 +39,44 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="adopt-form">
+            <p><h2>Signaler un animal</h2></p>
+                <p>Chaque signalement compte. Si vous avez trouvé un animal errant, blessé ou en détresse,
+                     merci de remplir ce formulaire avec le plus de précisions possible.
+                      Vos informations nous aideront à évaluer la situation et à agir rapidement pour lui offrir la sécurité et les soins qu'il mérite.</p>
+            <form action="" method="get" accept-charset="utf-8">
+                <fieldset>                
+                <!--Nom-->
+                <label for="Nom">Nom:</label>
+                <input type="text" id="Nom" class="cas" name="Nom" pattern="^[A-za-z]+(\s[A-za-z]+){0,2}$" maxlength="100" required><br><br>
+                <!--Adresse e-mail -->
+                <label for="email">Adresse e-mail:</label>
+                <input type="email" id="email" class="cas" name="email" pattern=".@uca\.ac\.ma$"required><br><br>
+                <!--numero de telephone-->
+                <label for="number">numero de telephone:</label>
+                <input type="number" id="number" class="cas" name="number" pattern="(^0[567]\d{8}$)|(^(\+212)[567]\d{8}$)"required><br><br>
+                <!--ville-->
+                <label for="Ville">Ville:</label>
+                <input type="text" id="Ville" class="cas" name="Ville" pattern="^[A-za-z]+(\s[A-za-z]+){0,2}$" maxlength="100" required><br><br>
+                
+                <label for="petType">Type animal:</label>
+                <input type="text" id="petType" class="cas" name="petType" pattern="^[A-za-z]+(\s[A-za-z]+){0,2}$" maxlength="100" required><br><br>
+
+                <label for="etatS">État de santé :</label><br>
+                <textarea id="desc" class="cas" name="etatS" maxlength="500"  ></textarea><br><br>
+
+                
+                <label for="desc">Description de l'animal :</label><br>
+                <textarea id="desc" class="cas" name="desc" maxlength="500" ></textarea><br><br>
+                 
+                <label for="animal-photo">Photos de l'animal :</label>
+                <input type="file" id="animal-photo" name="photo" accept="image/*" required>
+                <button type="submit">Envoyer</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
     
 </body>
 <footer>

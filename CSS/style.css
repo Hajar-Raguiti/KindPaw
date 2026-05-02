@@ -613,3 +613,18 @@ html {
     }
 }
 /* =============FAQ STYLE ============= */
+/* =============SUPPORT STYLE ============= */
+/*formulaire est déja pret, on ajout l'input de l'image*/
+input[type="file"] {
+    background: #fdfdfd;
+    border: 2px dashed #4a71f2;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+input[type="file"]:hover {
+    background: #fff5ed;
+}
