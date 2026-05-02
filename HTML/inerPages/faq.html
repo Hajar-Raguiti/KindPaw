@@ -39,6 +39,77 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="faq-wrapper">
+            
+            <!-- Gauche -->
+            <div class="faq-left">
+                <h2>Questions fréquentes</h2>
+                <p>
+                Veuillez sélectionner une catégorie pour trouver l'information dont vous avez besoin.
+                 Si vous ne trouvez pas la réponse à votre question dans notre FAQ, n'hésitez pas à nous contacter à l'adresse <a href="../../index.html">meow@kindPaw.com.</a>.
+                </p>
+            </div>
+
+            <!--Droit-->
+            <div class="faq-right">
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span class="faq-plus">+</span>
+                        <span class="label">Comment fonctionne le processus d'adoption ?</span>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Nous recueillons des animaux abandonnés, blessés ou en danger. Si vous trouvez un animal en détresse, contactez-nous immédiatement.
+                            Notre équipe intervient 7j/7 pour assurer leur prise en charge et leur mise en sécurité.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span class="faq-plus">+</span>
+                        <span class="label">D'où viennent les animaux que vous proposez à l'adoption ?</span>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Nos animaux proviennent de refuges partenaires, de familles d'accueil, d'abandons ou de saisies.
+                            Chaque animal passe par un bilan vétérinaire complet avant d'être proposé à l'adoption.  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span class="faq-plus">+</span>
+                        <span class="label">Puis-je réserver un animal en ligne ?</span>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Vous pouvez soumettre une <strong>demande d'intérêt</strong> en ligne, ce qui met votre dossier en haut de la liste.
+                             Cependant, la réservation ferme n'est confirmée qu'après l'entretien et la validation de votre dossier par notre équipe.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span class="faq-plus">+</span>
+                        <span class="label">Faites-vous un suivi après l'adoption ?</span>
+                    </div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                             Oui ! Nous effectuons un <strong>appel de suivi à J+7 et J+30</strong>.
+                             Nous pouvons aussi organiser une visite à domicile si vous le souhaitez.
+                             L'adoption n'est pas la fin de notre relation — nous restons présents tout au long de la vie de votre animal.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
     
 </body>
 <footer>
@@ -74,4 +145,15 @@
             <p>&copy; 2026 KindPaw — Tous droits réservés</p>
         </div>
 </footer>
+
+<script>
+    document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        });
+        });
+</script>
 </html>
