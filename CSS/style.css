@@ -264,6 +264,39 @@ footer a:hover {
     background-color: rgb(51, 88, 136); 
     transform: scale(1.05); 
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .first-text h2 {
+        font-size: 2rem;
+    }
+    .first-text p {
+        font-size: 1rem;
+    }
+
+    .images-hero {
+        justify-content: center;
+    }
+
+    .images-hero img {
+        max-width: 100px;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 /* =============ADOPTION PAGE STYLES (hero-cardes)============= */
 /* --- Style de la section Introduction --- */
 .adoption-intro {
