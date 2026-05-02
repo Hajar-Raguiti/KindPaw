@@ -78,6 +78,70 @@ header nav ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/*menu button*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #00355a; 
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .menu-toggle {
+        display: flex; /* button visible  */
+    }
+
+    /* nav {
+        display: none; /* masque menu */
+        /* width: 100%;} */ 
+
+    nav {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 150px;  
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex !important; /* liens apparaitre lorsque on click */
+    }
+
+    nav ul {
+        flex-direction: column; /* liens une sur l'autre */
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        background-color: #f8fbfd;
+        width: 100%;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    /* pour ne depasse pas les cotés */
+    .dropdown-content {
+        position: static; 
+        box-shadow: none;
+        text-align: center;
+        background-color: transparent;
+    }
+}
 /* Pied de Page (Footer) */
 footer {
     background: #53bfe2;
@@ -736,6 +800,10 @@ html {
 /* ── Item ── */
 .faq-item {
   border-bottom: 1px solid #ddd;
+}
+
+.faq-q:hover {
+  background-color: #f8fbff;
 }
 
 .faq-item:last-child {
