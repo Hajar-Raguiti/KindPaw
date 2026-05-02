@@ -248,26 +248,44 @@ footer a:hover {
 
 /* 4. Section des Images Hero (Alignement à droite) */
 .images-hero {
+    padding-top: 20px;
     flex: 1 1 300px;
     display: flex;
     flex-direction: row;
     align-items: flex-end; /* Aligne les images vers la droite */
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .images-hero img {
-    width: 100%;
-    max-width: 150px;
+    width: clamp(120px, 10vw, 200px);
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: 0.3s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+    flex-wrap: wrap;
+}
+ 
+.images-hero img:nth-child(2) {
+    animation-delay: 0.5s;
 }
 
-.images-hero img:hover {
-    transform: translateX(-10px); /* Effet de mouvement au survol */
+.images-hero img:nth-child(3) {
+    animation-delay: 1s;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 /*Cartes des Animaux (Section Adoption) */
 .Cartes {
     padding: 50px 8%;
