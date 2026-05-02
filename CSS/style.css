@@ -1,11 +1,11 @@
 /* =============GLOBALE STYLES (HEADER-FOOTER)============= */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 /* Paramètres Globaux */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
